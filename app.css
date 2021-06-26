@@ -1,0 +1,93 @@
+.anytime{
+    /* display: flex; */
+    /* flex-direction: row; */
+
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start;
+    align-content: flex-start; */
+    /* justify-content: space-evenly; */
+}
+body{
+    background-color:#aae0ce ;  /*#aae0ce*/
+}
+.havingfun{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.havingfunn{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.havingfunnn{
+    background-color: rgba(255, 255, 255,0.2);
+}
+/* .havingfunnnn{
+    opacity: 0.5;
+} */
+.darktheme{
+    background-color: black;
+    color: white;
+}
+.darktheme2{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.darktheme3{
+    color: white;
+}
+.lighttheme{
+    background-color: white;
+    color: black;
+}
+.lighttheme2{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.ptheme{
+    background-color: rgb(226, 141, 226);
+    color: black;
+}
+.ptheme2{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.ytheme{
+    background-color: rgb(235, 232, 99);
+    color: black;
+}
+.ytheme2{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.gtheme{
+    background-color: rgb(117, 224, 85);
+    color: black;
+}
+.gtheme2{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.navbar-brand{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+    /* color: #ffffff; */
+}
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3em;
+    /* color: white; */
+}
+.ppp{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 4em;
+}
+.pps{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 2em;
+}
+.ponta{
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+@media (max-width:770px){
+    .anytime{
+        display: block;
+    }
+}

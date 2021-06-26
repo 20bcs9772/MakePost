@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>MakePost</title>
+</head>
+
+<body>
+    <div class=" sticky-top">
+        <nav class="navbar container-fluid navbar-expand-lg navbar-light havingfun">
+            <a class="navbar-brand" href="#">MakePost</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="themez" href="#">Change Theme <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Posts</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search?">
+                    <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row my-4 justify-content-center ">
+            <div class="col-12 col-md-4 mx-0 mb-3">
+                <div class=" p-2 mb-3 mx-1 px-4 shadow p-3 mb-5 havingfun rounded">
+                    <h1 class="user-select-none">Type in </h1>
+                    <form action="do_nothing" id="f1">
+                        <div class="form-row mt-4 ">
+                            <div class="input-group col-12 mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Name</span>
+                                </div>
+                                <input type="text" name="name" class="form-control rounded-right" id="i1" required>
+                                <div class="invalid-feedback">
+                                    Please enter a name
+                                </div>
+                            </div>
+                            <div class="input-group col-12 mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Chat</span>
+                                </div>
+                                <textarea class="form-control" id="i2" name="chat"
+                                    aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="input-group col-12 mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Image Link</span>
+                                </div>
+                                <input type="text" name="url" class="form-control rounded-right" id="i3">
+                            </div>
+                            <div class="input-group col-12 col-xl-7 mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Background Color</span>
+                                </div>
+                                <input type="color" name="color" value="#ffffff" class="form-control rounded-right" id="i4">
+                            </div>
+                            <div class="input-group col-12 col-xl-4 ml-xl-1 mb-3">
+                                <button id="btn1" class="btn btn-primary">POST
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <label for="ul1" class="ml-2 ppp">
+                    <h2>Notifications (<span id="notif">0</span>) </h2>
+                </label>
+                <ul id="ul1" class="list-group havingfun">
+                </ul>
+            </div>
+            <div class="col-12 col-md-8 text-dark anytime">
+                <p class="ml-2 pps d-block d-md-none">Recent Posts</p>
+                <div id="postz" class="card-columns"></div>
+                <!-- style="width: 66%; height: 50em;" -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
